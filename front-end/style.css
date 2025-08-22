@@ -1,0 +1,11 @@
+#main{
+    display: flex;
+    justify-content: center;
+}
+
+
+.container-main{
+    height: 50vh;
+    width: 40vh;
+    display: flex;
+}

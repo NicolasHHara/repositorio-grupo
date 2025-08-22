@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header></header>
+    <main></main>
+
+    <footer></footer>
 </body>
 </html>
 <?php

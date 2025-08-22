@@ -10,8 +10,33 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header></header>
-    <main id="main">
+
+<header>
+    <div class="top-bar">
+      <div class="top-links">
+        <a href="#">Minha conta</a>
+        <a href="#">Pedidos</a>
+        <a href="#">Ajuda</a>
+      </div>
+    </div>
+
+    
+    <div class="main-bar">
+      <div class="logo">americanas</div>
+      <div class="search-box">
+        <input type="text" placeholder="Buscar produtos..." />
+        <button><i class="fas fa-search"></i></button>
+      </div>
+      <div class="icons">
+        <a href="#"><i class="fas fa-heart"></i></a>
+        <a href="#"><i class="fas fa-user"></i></a>
+        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+      </div>
+    </div>
+  </header>
+
+  
+  <main id="main">
         <?php
         for ($i = 0; $i < 4; $i++) {
             echo '<button class="button-main">
@@ -24,6 +49,7 @@
         }
         ?>
     </main>
+
     <footer></footer>
 </body>
 </html>

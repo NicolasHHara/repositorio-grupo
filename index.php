@@ -1,3 +1,4 @@
+
 <?php
 include_once("conexaodb.php");
 ?>
@@ -7,7 +8,7 @@ include_once("conexaodb.php");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=02   ">
 </head>
 <body>
 <header>
@@ -34,37 +35,31 @@ include_once("conexaodb.php");
     </div>
 </header>
 
-  <main id="main">
-    <div>
+<main id="main">
+  <h3 class="tituloMain">Categorias</h3>
+      <?php
+        //MONTANDO O SQL QUE SERA EXECUTADO NO BANCO DE DADOS
+        $sql = 'SELECT * FROM categorias';   
 
-    </div>
-    
-    </main>
-    <h3>Categorias</h3>
-        <ul>
-            <li>
-              <?php
-              //MONTANDO O SQL QUE SERA EXECUTADO NO BANCO DE DADOS
-              $sql = 'SELECT * FROM categorias';   
+        //EXECUTAR O SQL E GUARDAR O RETORNO
+        $retorno = mysqli_query($conexaodb, $sql);
 
-              //EXECUTAR O SQL E GUARDAR O RETORNO
-              $retorno = mysqli_query($conexaodb, $sql);
-
-              //LISTAR TODOS OS DADOS
-              while($linha = mysqli_fetch_assoc($retorno) ){
+        //LISTAR TODOS OS DADOS
+        while($linha = mysqli_fetch_assoc($retorno) ){
                         
-                        echo '
-              <a href="categoria.php?id='.$linha['categoriaID'].'">
-              <img src="'.$linha['url'].'" alt="">                       
-              '.$linha['nome'].
-              '</a>';
-                    }
-                    ?>
-                    
-                </a>
-            </li>
-        </ul>
-
+          echo '
+            <a href="categoria.php?id='.$linha['categoriaID'].'">
+              <div class="box-categoria">
+              <span class="nome-categoria">
+                '.$linha['nome'].'
+              </span>
+                <img src="'.$linha['url'].'" alt="" class="img-categoria">
+                <p class= "descricaoMain">'.$linha['descricao'].'</p>
+              </div>
+            </a>';
+        }
+      ?>
+</main>
 
 
     

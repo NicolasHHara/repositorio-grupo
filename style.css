@@ -12,6 +12,13 @@ body {
     padding: 0;
     color: #4b2e2e;
 }
+
+main {
+    padding: 20px;
+    min-height: 70vh;
+    height: 100vh;  
+  }
+
 .footer {
     background-color: #ff6584;
     color: #4b2e2e;
@@ -257,4 +264,54 @@ body {
     height: 50vh;
     width: 40vh;
     display: flex;
+}
+
+
+.img-categoria {
+  max-width: 90%;
+  border-radius: 15px;
+  height: auto;
+}
+
+.tituloMain{
+  font-family: 'Pacifico', cursive;
+  font-size: 36px;
+  color: #b94461;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.descricaoMain{
+  font-family: 'Baloo 2', cursive, Arial, sans-serif;
+  font-size: 18px;
+  color: #4b2e2e;
+  text-align: center;
+  margin: 0 20px 20px 20px;
+  line-height: 1.6;
+}
+
+.nome-categoria{
+  font-family: 'Pacifico', cursive;
+  font-size: 24px;
+  color: #b94461;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.box-categoria{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+  width: 20%;
+  height: 60vh;
+  border-radius: 15px;
+  background-color: #fff0f6;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  float: left;
+  margin-left: 10vw;
 }

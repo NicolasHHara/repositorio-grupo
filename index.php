@@ -1,5 +1,5 @@
 <?php
-
+include_once("conexaodb.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -33,32 +33,31 @@
         </div>
     </div>
 </header>
- 
-  </header>
+
   <main id="main">
     <div>
-      
+
     </div>
+    
     </main>
-    <h3>Produtos</h3>
+    <h3>Categorias</h3>
         <ul>
             <li>
-                    <?php
-                    //MONTANDO O SQL QUE SERA EXECUTADO NO BANCO DE DADOS
-                    $sql = 'SELECT * FROM categoria';   
+              <?php
+              //MONTANDO O SQL QUE SERA EXECUTADO NO BANCO DE DADOS
+              $sql = 'SELECT * FROM categorias';   
 
-                    //EXECUTAR O SQL E GUARDAR O RETORNO
-                    $retorno = mysqli_query($conexao, $sql);
+              //EXECUTAR O SQL E GUARDAR O RETORNO
+              $retorno = mysqli_query($conexaodb, $sql);
 
-                    //LISTAR TODOS OS DADOS
-                    while( $linha = mysqli_fetch_assoc($retorno) ){
+              //LISTAR TODOS OS DADOS
+              while($linha = mysqli_fetch_assoc($retorno) ){
                         
                         echo '
-                        <a href="categoria.php?id='.$linha['CategoriaID'].'">
-                        <img src="https://www.estadao.com.br/resizer/v2/TAWYDO4W6NJ2ZISO5WEXHUDY2Q.jpg?quality=80&auth=42368db718eca007f33cc1bec837e0299b2886361cf411f0f315d308996ce6cc&width=1262&height=710&smart=true" alt="">                       
-                        '.$linha['Nome'].
-                        '<span>R$ 9.999,99</span>'.
-                        '</a>';
+              <a href="categoria.php?id='.$linha['categoriaID'].'">
+              <img src="'.$linha['url'].'" alt="">                       
+              '.$linha['nome'].
+              '</a>';
                     }
                     ?>
                     

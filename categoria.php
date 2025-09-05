@@ -72,7 +72,7 @@ color: #34495e;
                 '.$linha['nome'].'
               </span>
                 <img src="'.$linha['url'].'" alt="" class="img-categoria">
-                <p class= "descricaoMain">'.$linha['descricao'].'</p>
+                <p class= "descricaoMain">'.$linha['descricao'].'</p  >
               </div>
             </a></div>';
         }

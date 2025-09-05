@@ -7,47 +7,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
-<title>Bebidas</title>
+<link rel="stylesheet" href=".css">
+<title>Produtos</title>
 <style>
-    
-body {
-font-family: Arial, sans-serif;
-background-color: #f0f0f0;
-margin: 0;
-padding: 20px;
-}
-h1 {
-text-align: center;
-color: #2c3e50;
-}
-.grid {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-gap: 20px;
-margin-top: 30px;
-}
-.card {
-background: #fff;
-padding: 15px;
-border-radius: 12px;
-box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-text-align: center;
-transition: transform 0.2s;
-height: 300px;
-}
-.card:hover {
-transform: scale(1.05);
-}
-.card img {
-max-width: 100%;
-border-radius: 8px;
-}
-.card h2 {
-font-size: 18px;
-margin: 10px 0;
-color: #34495e;
-}
 </style>
 </head>
 <body>

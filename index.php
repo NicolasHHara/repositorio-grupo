@@ -12,7 +12,6 @@ include_once("conexaodb.php");
 </head>
 <body>
 <header>
-    <<header>
     <div class="top-bar">
         <div class="top-links">
             <a href="#">Minha conta</a>

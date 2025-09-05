@@ -36,7 +36,7 @@
                 <p>no Pix</p>
               </div>
               <div class="container-comprar">
-                <p>Frete</p>
+                <p>CEP</p>
                 <input></input>
               </div>
               <div class="container-comprar">

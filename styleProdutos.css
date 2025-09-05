@@ -1,0 +1,141 @@
+/* Fonte feminina e delicada */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nunito:wght@400;600&display=swap');
+
+/* Estilo geral */
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #fff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container principal */
+.principal {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2em;
+}
+
+/* Cabeçalho da categoria */
+.cabecalho-categoria {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 2em;
+  border-bottom: 2px solid #f7d6e0;
+  padding-bottom: 0.8em;
+}
+
+.botao-voltar {
+  background-color: #fff;
+  border: 2px solid #e6007e;
+  color: #e6007e;
+  padding: 0.6em 1.2em;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.botao-voltar:hover {
+  background-color: #e6007e;
+  color: #fff;
+}
+
+.titulo-categoria {
+  font-family: 'Great Vibes', cursive;
+  display: flex;
+    align-items: center;
+  font-size: 2.2em;
+  color: #e6007e;
+  margin: 0;
+}
+
+.icone-categoria {
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
+  margin-left: auto;
+}
+
+/* Produtos */
+.container-produtos {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.caixa-produto {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2em;
+  max-width: 350px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  border: 1px solid #f3d0e0;
+}
+
+.img-produto {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1.2em;
+}
+
+.caixa-produto h3 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.8em;
+  margin: 0.5em 0;
+  color: #e6007e;
+}
+
+.descricao-produto {
+  font-size: 0.95em;
+  color: #666;
+  margin-bottom: 1.5em;
+}
+
+/* Container comprar */
+.container-comprar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em 0;
+  padding: 0.8em 1em;
+  background: #fff0f6;
+  border-radius: 8px;
+  font-size: 0.95em;
+  color: #444;
+}
+
+.container-comprar h3 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #e6007e;
+}
+
+.container-comprar input {
+  padding: 0.4em;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+}
+
+/* Botão comprar */
+.botao-comprar {
+  width: 100%;
+  background-color: #e6007e;
+  border: none;
+  padding: 0.9em;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-size: 1em;
+  margin-top: 1em;
+}
+
+.botao-comprar:hover {
+  background-color: #cc006f;
+}

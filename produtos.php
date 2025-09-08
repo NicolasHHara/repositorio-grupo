@@ -23,7 +23,7 @@
               <button class="botao-voltar">← Voltar</button>
           </a>
           <h2 class="titulo-categoria">'.$linha['nome'].'</h2>
-          <img src="./imagens/categorias/'.$linha['categoriaID'].'.png" alt="'.$linha['nome'].'" class="icone-categoria">
+          <img src="" alt="''" class="icone-categoria">
           </div>
 
           <div class="container-produtos">

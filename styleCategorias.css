@@ -1,11 +1,10 @@
-/* RESET */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
-  /* BODY */
   body {
     font-family: 'Baloo 2', cursive, Arial, sans-serif;
     background-color: #fff0f6;
@@ -13,7 +12,6 @@
     line-height: 1.6;
   }
   
-  /* HEADER */
   .top-bar {
     background-color: #f8c8dc;
     padding: 10px 20px;

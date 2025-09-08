@@ -1,7 +1,5 @@
-/* Fonte feminina e delicada */
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nunito:wght@400;600&display=swap');
 
-/* Estilo geral */
 body {
   font-family: 'Nunito', sans-serif;
   background-color: #fff;
@@ -10,14 +8,12 @@ body {
   padding: 0;
 }
 
-/* Container principal */
 .principal {
   max-width: 1200px;
   margin: auto;
   padding: 2em;
 }
 
-/* Cabeçalho da categoria */
 .cabecalho-categoria {
   display: flex;
   align-items: center;
@@ -59,7 +55,6 @@ body {
   margin-left: auto;
 }
 
-/* Produtos */
 .container-produtos {
   display: flex;
   justify-content: center;
@@ -95,7 +90,6 @@ body {
   margin-bottom: 1.5em;
 }
 
-/* Container comprar */
 .container-comprar {
   display: flex;
   justify-content: space-between;
@@ -121,7 +115,6 @@ body {
   outline: none;
 }
 
-/* Botão comprar */
 .botao-comprar {
   width: 100%;
   background-color: #e6007e;

@@ -54,7 +54,7 @@ $retorno = mysqli_query($conexaodb, $sql);
     </div>
   </main>
 
-  <!-- FOOTER -->
+  
   <footer class="footer">
     <div class="footer-container">
       <div class="footer-column">
